@@ -39,7 +39,7 @@ func _process(delta: float) -> void:
 		$AnimatedSprite2D.animation = "up"
 
 
-func _on_body_entered(body: Node2D) -> void:
+func _on_body_entered(_body: Node2D) -> void:
 	hide()
 	hit.emit()
 	# Disable the players collision so it won´t be triggered more than once
